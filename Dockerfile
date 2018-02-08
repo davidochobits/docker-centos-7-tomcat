@@ -5,10 +5,6 @@ MAINTAINER davidochobits davidochobits@colaboratorio.net
 
 ENV container docker
 
-ENV http_proxy=gen_unix:maXhWDBcmJz7BRTc@http://10.40.24.16:8080
-ENV https_proxy=gen_unix:maXhWDBcmJz7BRTc@http://10.40.24.16:8080
-ENV ftp_proxy=gen_unix:maXhWDBcmJz7BRTc@http://10.40.24.16:8080
-
 RUN yum -y update
 RUN yum -y install sudo \
 	tar \
