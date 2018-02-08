@@ -8,6 +8,6 @@ Para realizar la construcción de la imagen:
 
 Una vez generada la imagen, utilizamos el siguiente comando:
 
-<code>docker run -dti --name "ServidorTomcat8-contenedor" -p 8080:8080 <nombre-de-la-imagen> </code>
+<code>docker run -dti --name "ServidorTomcat8-contenedor" -p 8080:8080 -imagen- </code>
 
 Se agradecen comentarios al respecto. 
