@@ -4,7 +4,7 @@ Dockerfile pensado para poner en servicio un Tomcat 8 sobre un servidor Centos 7
 
 Para realizar la construcción de la imagen:
 
-<code>docker build -t "ServidorTomcat8" .</code>
+<code>docker build -t david/tomcat8:latest .</code>
 
 Una vez generada la imagen, utilizamos el siguiente comando:
 
