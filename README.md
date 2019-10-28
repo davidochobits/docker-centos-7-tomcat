@@ -10,4 +10,6 @@ Una vez generada la imagen, utilizamos el siguiente comando:
 
 <code>docker run -dti --name "ServidorTomcat8-contenedor" -p 8080:8080 -imagen- </code>
 
+El usuario administrador por defecto es *admin* y su contraseña es *admin*
+
 Se agradecen comentarios al respecto. 
