@@ -4,11 +4,11 @@ Dockerfile pensado para poner en servicio un Tomcat 8 sobre un servidor Centos 7
 
 Para realizar la construcción de la imagen:
 
-<code>docker build -t david/tomcat8:latest .</code>
+<code>docker build -t davidochobits/tomcat8:latest .</code>
 
 Una vez generada la imagen, utilizamos el siguiente comando:
 
-<code>docker run -dti --name "ServidorTomcat8-contenedor" -p 8080:8080 -imagen- </code>
+<code>docker run -dti --name "Nombre Contenedor" -p 8080:8080 -imagen- </code>
 
 El usuario administrador por defecto es *admin* y su contraseña es *admin*
 
