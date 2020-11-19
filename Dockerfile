@@ -5,22 +5,24 @@ MAINTAINER davidochobits davidochobits@colaboratorio.net
 
 ENV container docker
 
-RUN yum -y update \
- && yum -y install sudo \
+
+RUN yum -y update && yum -y install \
+	sudo \
 	tar \
 	gzip \
 	openssh-clients \
 	java-1.7.0-openjdk-devel \
 	vi \
 	find \
- && yum -y clean all
+  && rm -rf /var/cache/yum*
+
 
 RUN groupadd tomcat
 RUN useradd -M -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
 
-ADD apache-tomcat-8.5.47.tar.gz /opt/
+ADD apache-tomcat-8.5.60.tar.gz /opt/
 
-RUN mv /opt/apache-tomcat-8.5.47 /opt/tomcat
+RUN mv /opt/apache-tomcat-8.5.60 /opt/tomcat
 
 ADD tomcat-users.xml /opt/tomcat/conf
 ADD context.xml /opt/tomcat/webapps/manager/META-INF/context.xml
