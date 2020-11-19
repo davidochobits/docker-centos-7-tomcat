@@ -5,6 +5,7 @@ MAINTAINER davidochobits davidochobits@colaboratorio.net
 
 ENV container docker
 
+
 RUN yum -y update && yum -y install \
 	sudo \
 	tar \
@@ -13,7 +14,8 @@ RUN yum -y update && yum -y install \
 	java-1.7.0-openjdk-devel \
 	vi \
 	find \
-     && rm -rf /var/cache/yum*
+  && rm -rf /var/cache/yum*
+
 
 RUN groupadd tomcat
 RUN useradd -M -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
