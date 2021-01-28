@@ -20,9 +20,9 @@ RUN yum -y update && yum -y install \
 RUN groupadd tomcat
 RUN useradd -M -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
 
-ADD apache-tomcat-8.5.60.tar.gz /opt/
+ADD apache-tomcat-8.5.61.tar.gz /opt/
 
-RUN mv /opt/apache-tomcat-8.5.60 /opt/tomcat
+RUN mv /opt/apache-tomcat-8.5.61 /opt/tomcat
 
 ADD tomcat-users.xml /opt/tomcat/conf
 ADD context.xml /opt/tomcat/webapps/manager/META-INF/context.xml
